@@ -1,0 +1,28 @@
+[project]
+name = "ldth-drone-acoustics"
+version = "0.0.0"
+description = "Machine learning on drone acoustics for the London Defense Tech Hackathon, May 2025. Designed and run by Helsing."
+authors = [
+  { name = "Joe Early", email = "joe.early@helsing.ai" },
+]
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "requests>=2.32.3",
+    "scikit-learn>=1.6.1",
+    "soundfile>=0.13.1",
+    "texttable>=1.7.0",
+    "tqdm>=4.67.1",
+    "types-requests>=2.32.0.20250328",
+    "types-tqdm>=4.67.0.20250417",
+]
+
+[tool.uv]
+index-strategy = "unsafe-first-match"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
