@@ -1,0 +1,7 @@
+CHECKPOINT: Trained the model on log mel spectrograms and saved to disk, as a basic starting point.
+(Also created a mini streamlit dashboard for viewing the spectrograms, mostly to assist with conceptualising audio data.)
+
+NEXT: Evaluate the model against the test data, and determine performance on unseen samples.
+(Train a model on 1D waveform array and compare performance)
+(Depending on performance, trial an ensemble model, trained on both, or a third feature)
+(Add a creative streamlit component that visually classifies the audio on a dashboard for an operator potentially vibe code that in flask)
