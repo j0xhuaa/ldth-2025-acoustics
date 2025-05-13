@@ -6,7 +6,8 @@ from data_loader import load_data_to_waveform, SAMPLE_RATE, plot_waveforms
 DATA_DIR = 'data/raw/train'
 SAMPLE_RATE = 16000
 
-st.title("📈 Waveform Viewer")
+
+st.title("📈 Placeholder Page: Waveform Viewer")
 
 # Load waveforms and labels
 waveforms, y, labels = load_data_to_waveform(DATA_DIR)
