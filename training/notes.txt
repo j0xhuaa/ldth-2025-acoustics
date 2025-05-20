@@ -16,3 +16,19 @@ Test Loss: 0.1037
 - Cross entropy loss, which quantifies the difference between the predicted probablities and the actual labels
 - The loss is reasonable here, as even with a high accuracy a high loss can mean there is some error spread across classes.
 - Can be considered as a confidence penalty.
+
+Classification Report
+- precision: of all the times the model predicted this class, how many were actually correct
+- recall: of all the actual samples of this class, how many did the model correctly identify
+- f1-score: Balance between precision and recall
+- support: the number of true examples of this class in the rest set
+The classification report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.94      0.94        16
+           1       0.96      0.96      0.96        24
+           2       1.00      1.00      1.00        18
+
+    accuracy                           0.97        58
+   macro avg       0.97      0.97      0.97        58
+weighted avg       0.97      0.97      0.97        58
