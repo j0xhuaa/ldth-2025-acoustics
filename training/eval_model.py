@@ -17,7 +17,6 @@ model.compile(
     metrics=['accuracy']
 )
 
-
 # load the test data from disk for evaluation
 X_test = np.load("./test_data/X_test_logmel_v1.1.npy")
 y_test = np.load("./test_data/y_test_logmel_v1.1.npy")

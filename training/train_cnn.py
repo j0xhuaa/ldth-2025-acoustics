@@ -75,6 +75,8 @@ if __name__ == "__main__":
     np.save("test_data/X_test_logmel_v1.1.npy", X_test)
     np.save("test_data/y_test_logmel_v1.1.npy", y_test)
 
+    print('Training shape:', X_train.shape)
+
 
 """
 The below code can be used for training raw waveforms rather than log_mels

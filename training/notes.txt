@@ -32,3 +32,28 @@ The classification report:
     accuracy                           0.97        58
    macro avg       0.97      0.97      0.97        58
 weighted avg       0.97      0.97      0.97        58
+
+
+Evaluating on the Useen data
+
+Unseen Test Accuracy: 0.7778
+Unseen Test Loss: 0.8237
+
+Classification Report on Unseen Data
+              precision    recall  f1-score   support
+
+           0       0.79      0.62      0.70        24
+           1       0.81      0.92      0.86        24
+           2       0.73      0.79      0.76        24
+
+    accuracy                           0.78        72
+   macro avg       0.78      0.78      0.77        72
+weighted avg       0.78      0.78      0.77        72
+
+
+
+To do
+- Review code elements, step by step
+- Evaluate why there is a such a mismatch between test data, and unseen data, what could have gone wrong.
+- Consider why evaluation differs
+- Create a config for constanst so that data is loaded using consistent shape
