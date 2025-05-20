@@ -13,13 +13,13 @@ if __name__ == "__main__":
     X = np.array(log_mels)[..., np.newaxis] # shape: (num_samples, n_mels, time_steps, 1)
 
 
-    # normalises spectrogram values, ensuring all data is on the same sacle.**
+    # normalises spectrogram values, ensuring all data is on the same scale.**
     X = (X - np.mean(X)) /np.std(X)
 
     # converts integer labels like 0,1,2 into [1,0,0] **Interested in why we go from floats, to maybe binary array.
     y = utils.to_categorical(y, num_classes=len(labels))
 
-    # split the data into training and testing sets, just using out training data for eval
+    # split the data into training and testing sets, just using our training data for eval
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
@@ -69,7 +69,11 @@ if __name__ == "__main__":
 
     # save the models architecture weights and 
     # naming convention "model_<data_type>_<architecture>_v<major>.<minor>.h5"
-    model.save("model_logmel_cnn_v1.0.h5") 
+    model.save("./models/model_logmel_cnn_v1.1.h5")
+
+    # save the test data to be used for evaluating the model to disk
+    np.save("test_data/X_test_logmel_v1.1.npy", X_test)
+    np.save("test_data/y_test_logmel_v1.1.npy", y_test)
 
 
 """

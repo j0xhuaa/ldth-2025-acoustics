@@ -5,3 +5,14 @@ NEXT: Evaluate the model against the test data, and determine performance on uns
 (Train a model on 1D waveform array and compare performance)
 (Depending on performance, trial an ensemble model, trained on both, or a third feature)
 (Add a creative streamlit component that visually classifies the audio on a dashboard for an operator potentially vibe code that in flask)
+
+Evaluation of model_logmel_cnn_v1.0.h5
+
+Test Accuracy: 0.9655
+- 96.55% of predictions were correct on X_test dataset
+- Generalizes well on unseen data,
+
+Test Loss: 0.1037
+- Cross entropy loss, which quantifies the difference between the predicted probablities and the actual labels
+- The loss is reasonable here, as even with a high accuracy a high loss can mean there is some error spread across classes.
+- Can be considered as a confidence penalty.

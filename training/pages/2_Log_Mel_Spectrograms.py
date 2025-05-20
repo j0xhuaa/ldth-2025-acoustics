@@ -2,7 +2,7 @@ import streamlit as st
 from data_loader import load_data_to_waveform, waveform_to_logmel, SAMPLE_RATE, plot_log_mel_spectrograms
 
 st.title("🎛️ Log-Mel Spectrogram Viewer")
-st.info("This page is under construction. Visualizations coming soon!")
+st.info("Sample of the log mel spectrograms that we are recording")
 
 DATA_DIR = 'data/raw/train'
 SAMPLE_RATE = 16000

@@ -56,7 +56,7 @@ def load_data_to_waveform(data_dir):
 def waveform_to_logmel(waveform, sr):
     """
     Converts the 1D audio waveform into a 2D log-mal spectrogram.
-    Output is a time-frequency representation used as CNN input.
+    Output is a time-frequency representation of the samples.
     """
     mel_spec = librosa.feature.melspectrogram(
         y=waveform,
